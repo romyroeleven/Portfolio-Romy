@@ -1,0 +1,213 @@
+* 
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 100px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Algemene stijlen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    line-height: 1.8;
+    background-color: #f7f7f7; /* Hele achtergrond lichtgrijs */
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+/* Streepje onder de actieve link 'Over mij' */
+nav a.active {
+    border-bottom: 1px solid #333;
+}
+
+/* Over mij sectie */
+.about {
+    max-width: 800px;
+    margin: 150px auto 50px;
+    text-align: center;
+    padding: 40px;
+    background-color: #f7f7f7; /* Achtergrond van de sectie ook lichtgrijs */
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+/* Streepje onder de kop 'Over mij' */
+.about hr {
+    border: 0;
+    height: 1px;
+    background-color: #333; /* Donkere, dunne streep */
+    width: 100px;
+    margin: 20px auto;
+}
+.email-image {
+    width: 150px; /* Pas de grootte van de afbeelding aan */
+    transition: transform 0.3s ease; /* Voor een soepele animatie */
+    margin-left: 150px;
+}
+
+.email-image:hover {
+    transform: translateY(-10px); /* Verplaatst de afbeelding iets omhoog */
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 48px; /* Kleiner voor telefoons */
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Verandert de navigatie naar een kolom voor smalle schermen */
+        align-items: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        padding: 0 10px; /* Extra ruimte op tablets */
+    }
+}
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+}
+.hero {
+    background-image: url('image/silkbackground\ kopie.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 80vh; /* Lagere hoogte op telefoons */
+    }
+}
+

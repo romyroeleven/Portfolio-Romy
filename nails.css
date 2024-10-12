@@ -1,0 +1,197 @@
+/* Algemene stijlen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    line-height: 1.8;
+    background-color: #f7f7f7; /* Hele achtergrond lichtgrijs */
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+nav ul li:nth-child(2) a::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 5px;
+    border-bottom: 1px solid #333;
+}
+
+.intro, .logo, .instagram, .nail-photos, .prijslijst, .poster, .onderzoek {
+    margin-bottom: 30px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h1 {
+     font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.logo p {
+     font-size: 1.2em;
+    margin-bottom: 80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img {
+    margin-bottom: 80px;
+}
+
+.onderzoek {
+    text-align: center;
+    padding: 50px 20px;
+}
+.onderzoek p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img, .instagram img, .nail-photos img, .prijslijst img, .poster img {
+   width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-left: 500px;
+}
+
+.nail-photos {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+
+.nail-photo {
+    flex: 1;
+    margin: 0 20px;
+}
+
+/* Voettekst met terug-knop */
+footer {
+    padding: 40px 0;
+    margin-left: 700px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #555;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 48px; /* Kleiner voor telefoons */
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Verandert de navigatie naar een kolom voor smalle schermen */
+        align-items: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        padding: 0 10px; /* Extra ruimte op tablets */
+    }
+}
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+}
+.hero {
+    background-image: url('image/silkbackground\ kopie.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 80vh; /* Lagere hoogte op telefoons */
+    }
+}
